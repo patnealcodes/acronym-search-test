@@ -1,0 +1,41 @@
+body {
+	background: #eee;
+}
+
+.form-control {
+	margin: 0 0 1em 0;
+}
+
+.acr-search--searchbox-container {
+	margin: 0 0 1em;
+	position: relative;
+
+	.form-control {
+		margin: 0;
+	}
+}
+
+.acr-search--results {
+	background: #fefefe;
+	border-radius: 4px;
+	box-shadow: .5em .5em 1em rgba(0,0,0,.5);
+	overflow: hidden;
+	position: absolute;
+	top: 100%;
+
+	li {
+		border-bottom: 1px solid #eee;
+		padding: .5em 1em;
+
+		&:last-child {
+			border-bottom: 0;
+		}
+
+		&:hover,
+		&:focus {
+			background: #ccc;
+			cursor: pointer;
+			outline: none;
+		}
+	}
+}
